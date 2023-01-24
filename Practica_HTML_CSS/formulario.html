@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Práctica de HTML5 y CSS</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Luis Uriel Robles Estrada</h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="formulario.html">Contacto</a>
+        </nav>
+    </div>
+    <main class="contenedor sombra">
+        <section>
+            <h2>Contacto</h2>
+
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactame llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campos">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu nombre">
+                        </div>
+
+                        <div class="campos">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu email">
+                        </div>
+
+                        <div class="campos">
+                            <label>Sexo</label>
+                            <input id="men" type="radio" name="gender" checked>Hombre
+                            <input id="women" type="radio" name="gender">Mujer
+                        </div>
+
+                        <div class="campos">
+                            <label>Contraseña</label>
+                            <input class="input-text" type="password" placeholder="Tu contraseña">
+                        </div>
+
+                        <div class="campos">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+
+                        <select class="campos">
+                            <option disabled selected>--Selecionar Ciudad--</option>
+                            <option>Guadalajara</option>
+                            <option>Tlaquepaque</option>
+                            <option>Zapopan</option>
+                            <option>Tonalá</option>
+                            <option>Tlajomulco</option>
+                        </select>
+
+                        <div class="campos">
+                            <label>Me interesa contactarte</label>
+                            <input id="yes" type="radio" name="gender" checked>Si
+                            <input id="women" type="radio" name="gender">No
+                        </div>
+
+                        <div class="alinear-derecha flex">
+                            <input class="boton w-sm-100" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados. Uriel Robles</p>
+        <a class="enlace" href="mailto:luis.robles7678@alumnos.udg.mx">Contactame haciendo click aquí</a>
+    </footer>
+
+</body>
+</html>
